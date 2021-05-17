@@ -14,6 +14,7 @@ $(document).ready(function () {
     const totalItemCost = $('.subtotal').text()
     // grabbing total number of items from the cart
     const totalItems = $(".number-items").text()
+
     // Overlay and Modal divs
     const overlay = $('<div id="overlay"></div>');
     // create modal divs
@@ -80,8 +81,7 @@ $(document).ready(function () {
         display: "none",
         top: "50%",
         left: "50%",
-        paddingTop: "10px",
-        transform: 'translate(-50%, -50%)',
+        transform: 'translate("-50%", "-50%")',
         border: "1px solid black",
         borderRadius: "10px",
         zIndex: 110,
@@ -89,6 +89,7 @@ $(document).ready(function () {
         height: "300px",
         width: "500px",
         maxWidth: "80%",
+        opacity: 1
     })
     // modal header styles
     modalHeader.css({
@@ -162,7 +163,7 @@ $(document).ready(function () {
     // Current Gotchas / Errors being worked through
     // 1. Modal needs styling
     // 2. Image Elements returning an html collection so not able to access the Image src
-    
+    // 3. Modal not centered. has to do with css positioning being applied
 
     // BONUS SECTION
     // Explain potential problems that could arise if this snippet had more or less than the 2 items in the cart. How would you address those problems?
